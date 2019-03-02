@@ -39,7 +39,6 @@ public class Numbers {
 		algo.insertionSort(num);
 		long insertionSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
-
 		//By following above, Continue for rest of the Sorting Algorithm....
 
 

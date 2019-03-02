@@ -20,6 +20,25 @@ public class UnitTestSorting {
         }catch(Exception ex){
             ex.getMessage();
         }
+        sort.insertionSort(unSortedArray);
+        //verify if the unsorted array is sorted by the selection sort algorithm.
+        try {
+            Assert.assertEquals(sortedArray, unSortedArray, "Array is not Sorted");
+        }catch(Exception ex){
+            ex.getMessage();
+        }
+        sort.bubbleSort(unSortedArray);
+        //verify if the unsorted array is sorted by the selection sort algorithm.
+        try {
+            Assert.assertEquals(sortedArray, unSortedArray, "Array is not Sorted");
+        }catch(Exception ex){
+            ex.getMessage();
+        }
+
+
+
+
+
 
         //Now implement Unit test for rest of the soring algorithm...................below
 
