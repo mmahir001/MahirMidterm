@@ -34,7 +34,7 @@ public class Sort {
     public int[] insertionSort(int[] array) {
         final long startTime = System.currentTimeMillis();
         int[] list = array;
-        for (int i = 1; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             int j = i - 1;
             int pass = array[i];
             while (j >= 0 && array[j] > pass) {
@@ -42,7 +42,10 @@ public class Sort {
                 j = j - 1;
             }
             array[j + 1] = pass;
+//            System.out.println(array[i] + "INSERT");
+
         }
+
 
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
@@ -64,7 +67,7 @@ public class Sort {
                 }
 
             }
-            System.out.println(array[i] + "Bubble");
+//            System.out.println(array[i] + "Bubble");
         }
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;

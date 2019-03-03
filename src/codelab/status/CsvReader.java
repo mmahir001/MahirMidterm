@@ -8,6 +8,7 @@ import java.util.*;
 public class CsvReader {
 
     public static void main(String[] args) {
+
         /*
          Coma Separated Value(CSV) of your CodeLab status is downloaded and it parsed.
          Based on number of solution you solved, message is generated for you.
@@ -62,7 +63,14 @@ public class CsvReader {
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
             }
         }
-
+        int length = roster.size();
+        int totalExercise = 0;
+        for (Trainee tr : roster){
+            totalExercise += tr.getNumberOfExercisesSolved();
+        }
+        System.out.println("The average score of the class is " +totalExercise/length);
     }
 
 }
+
+
