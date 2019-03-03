@@ -119,18 +119,45 @@ What is compile time and run time?
 A. Compile time is the case where the code you entered is converted to executable, and Run time is the case where the executable is running
 
 What is heap?
+A. Is the runtime data area of RAM, where all class instances and arrays is allocated.
+
 How java manage it's memory?
+A. Static variables are stored in the heap area, and object stored on the heap can be referred by references stored in thread stack.
+
 What is the difference between String, StringBuffer and StringBuilder?
+A. String is immutable, and once assigned can not be changed.
+   StringBuffer is mutable, and can change the value of the object .
+   StringBuilder stores the object in heap, and can also be modified.
+
 What is Singleton class?
+A. Is a class that can have only one object at a time.
+
 What is Serialization and Deserialization?
+A. Serialization is a way of converting the state of an object into a byte stream. And, Deserialization is the process of using byte stream to recreate the actual Java object in memory.
+
 when to use transient variable in java?
+A. When using serialization.
+
 Difference between while and do..while loop?
+A. A do-while loop doesn't check it's condition until the end of the loop but the while loop check's its condition first.
+
 What is Enum?
+A. Type of class that defines a collection of constants.
+
 What is Iterator?
+A. Is an interface which belongs to Collection framework in Java to retrieve elements one by one.
+
 Which one will take more memory, an int or Integer?
+A. They both uses 32 bits of memory.
+
 Why is String Immutable in Java?
+A. Because, String objects are cached in String pool.
+
 What is constructor chaining in Java?
+A. The process of calling one constructor from another constructor with respect to current object.
+
 The difference between Serial and Parallel Garbage Collector?
+A.
 What is JIT stands for?
 Explain Java Heap space and Garbage collection?
 Can you guarantee the garbage collection process?
