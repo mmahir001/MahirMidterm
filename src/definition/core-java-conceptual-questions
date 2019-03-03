@@ -3,27 +3,43 @@ Please answer the below core-java Questions:
 What is programing language?
 A. A programing language is a language that allows us to communicate with the machine.
 
-
-
-
 What jdk contains or composed of and define each components?
-A.
-
-
-
-
+A. 1. Java Runtime Environment: Is a tools for development of Java applications, which combines the JVM, platform core classes and supporting libraries.
+   2. Interpreter/loader: reads in as input a source program and interprets .java to .class.
+   3. Compiler: is a program that translates a source program written in some high-level programming language into machine code.
+   4. Archiver (jar): a file format that contains bundled Java class files.
+   5. Documentation generator (javadoc): is a documentation generator.
 
 What is IDE?
-A.
+A. Integrated development environment
+
 What are the IDEs available in the market to support java?
+A. IntelliJ, Eclipse, NetBeans, BlueJ, DrJave, JDeveloper, JBuilder,JCreator, and more..
+
 Explain the entire java life cycle.
+A. First you write the source code using text editor. Then java compiler converts it into bytecodes, and .java gets converted into .class. After that it loads into Java virtual Machine then you get the output to the operating system.
+
 what is class?
+A. a class is a blueprint which determines how objects of that type will behave.
+
 What is object?
+A.is an instance of a class. The variable name is just the address in memory to where the object is stored.
+
 What is the entry point of an application?
+A. At the main method.
+
 Why main is static?
+A. Because, static can be directly invoked through the class.
+
 Which class is the superclass of all classes?
+A.
+
 What is difference between path and classpath variables?
+A.
+
 What is the difference between an Interface and Abstract class?
+A.
+
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
 what is Access Specifier?
 What is OOP ? Define each feature of java OOP.
