@@ -78,28 +78,46 @@ What is final and how it has been used variables and methods?
 A. Final is used to restrict the user. If you declare a final variable you cannot modified the variable. Same goes for method as well, if you declare final method you cannot modified it.
 
 What is final, finally and finalize?
-A.
+A. -final method cannot be be overridden and final class can't be inherited.
+   -finally is executed in the end whether or not an exception occurs.
+   -finalize is a method that is a garbage collector and can be used before Java's automatic garbage collector happens.
 
 What is a constructor ?
-A.
+A. Is a block of code similar to a method that's called when an instance of an object is created. Is a special method of a class, is used to initialize object.
 
 Can we have multiple constructors in a class?
-A.
+A. Yes, as long as its signature are not the same.
 
 If we don't have a constructor declared, what is called during the object creation?
-A.
+A. A default constructor will be called.
 
 What is "this" keyword in java ?
-A.
+A. It's used to refer to the current object.
 
 What is "super" keyword in java? How many possible way can you use?
+A. Is a reference variable, which is used to refer immediate parent class object. In can be used with variables, methods, and constructors.
+
 What is JVM stand for ?
+A. Java Virtual Machine
+
 Is JVM platform independent?
+A. No
+
 What version of java are you using?
+A. Version 8
+
 What is JAR stand for ?
+A. Java ARchive
+
 What is the difference between JDK and JVM?
+A. JVM runs Java bytecode, whereas JDK is used to compile Java source code.
+
 What is the difference between JVM and JRE?
+A. JVM is is used to compile Java source code. And, JRE provide runtime environment.
+
 What is compile time and run time?
+A. Compile time is the case where the code you entered is converted to executable, and Run time is the case where the executable is running
+
 What is heap?
 How java manage it's memory?
 What is the difference between String, StringBuffer and StringBuilder?
