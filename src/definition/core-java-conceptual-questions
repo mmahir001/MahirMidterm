@@ -32,29 +32,66 @@ Why main is static?
 A. Because, static can be directly invoked through the class.
 
 Which class is the superclass of all classes?
-A.
+A. java.lang.Object.
 
 What is difference between path and classpath variables?
-A.
+A. Path: is used to set the path for all Java software tools like javac.exe, java.exe, javadoc.exe, and so on.
+   Classpath: is used to set the path for java classes.
 
 What is the difference between an Interface and Abstract class?
-A.
+A. Interface are absolutely abstract and cannot have implementations. However, an abstract class can have instance methods that implements a default behavior. Also, in a Java interface the variables declared is by default final, and the abstract class may contain non-final variables.
 
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+A. No, you can implement the Abstract class or interface in a new class, then create the object of this new class and use this object to your desire.
+
 what is Access Specifier?
+A. It regulate access to classes, fields and methods in Java. The Specifiers determine is a field or method in a class, can be used or invoked by another method in another class or sub-class.
+
 What is OOP ? Define each feature of java OOP.
+A. Object Oriented Programming.
+   1. Abstraction: is process of hiding implementation from the user.
+   2. Encapsulation: a mechanism of wrapping the data. Also, known as data hiding.
+   3. Inheritance: a mechanism where a new class is derived from an existing class.
+   4. Polymorphism: is the ability of an object to take on many form.
+
 What is Java Package and which package is imported by default?
+A. Is used to organize Java classes into namespaces similar, providing a unique namespace for each type it contains. It can be stored in compressed files called JAR files, and java.lang package is imported by default.
+
 What is API? Name list of API that you have used so far.
+A. Application programming interface, we mostly used JARs, and util.
+
 Does java support multiple inheritance, explain why or why not?
+A. No, because it leads to overriding of methods when the extended classes have a same method name.
+
 What is method overloading and when it happens?
+A. Is when a class has multiple methods with same name but different in parameters. It happens, when two or more methods in one class have the same method name but different parameters.
+
 Explain exceptions in java and how to handle it.
+A. Is an event that occurs during compile time or runtime when a disrupt occurs in the code. In Java exceptions are handled by using a try catch block.
+
 What is static keyword in java? How it has been used in variables and methods ?
+A. Is a non-access modifier.
+   The static variable can be used to refer to the common property of all objects . It gets memory only once in the class area at the time of class loading. it means that, it holds the last updated value to that variable.
+   A static method is a method that can be called on a class and usually does not require the class to be instantiated. it can be used without creating an object.
+
 What is final and how it has been used variables and methods?
+A. Final is used to restrict the user. If you declare a final variable you cannot modified the variable. Same goes for method as well, if you declare final method you cannot modified it.
+
 What is final, finally and finalize?
+A.
+
 What is a constructor ?
+A.
+
 Can we have multiple constructors in a class?
+A.
+
 If we don't have a constructor declared, what is called during the object creation?
+A.
+
 What is "this" keyword in java ?
+A.
+
 What is "super" keyword in java? How many possible way can you use?
 What is JVM stand for ?
 Is JVM platform independent?
