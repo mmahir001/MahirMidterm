@@ -157,26 +157,43 @@ What is constructor chaining in Java?
 A. The process of calling one constructor from another constructor with respect to current object.
 
 The difference between Serial and Parallel Garbage Collector?
-A.
+A. Serial garbage collector works by holding all the application threads. And, Parallel garbage collector is the default for JVM, which uses multiple threads for garbage collection.
+
 What is JIT stands for?
+A. Just In time
+
 Explain Java Heap space and Garbage collection?
+A. Heap space is part of memory allocated to JVM, is divided into three generation for garbage collection, which are New Generation, Old Generation, and Perm Space.
+
 Can you guarantee the garbage collection process?
+A. No, it can reject the request.
+
 What is the difference between stack and heap in Java?
+A. Heap s used by all the parts of the application, and stack is used by only one thread of execution.
+
 What is reflection in java and why is it useful?
+A. Is a API that is used to check the behavior of methods, classes, interfaces at runtime. It's useful because it informs us about the class the object belongs to and the methods that can be executed by object.
+
 what is multithreading in java?
+A. Is the process of executing multiple threads simultaneously.
+
 What is the use of synchronization in Java?
+A. Is used to provide access to a shared resource with multiple threads in Java.
+
 What is Framework?
+A. Is prewritten code, which can be used to add our own code to solve a problem.
+
 What are the testing Framework available in java?
+A. JUnit, REST Assured, Selenium, TestNG, Mockito, Spock Framework, Cucumber, Spring Test, DBUnit, and Robot Framework.
+
 Difference between jUnit and testNG?
+A. TestNG supports parallel testing, but JUnit does not. Also, JUnit does not support group test, while in TestNG we can test large group at the same time.
+
 What are the dependencies for this project?
+A. File class and data
+
 what is dependency injection in java?
+A. Is technique through which one object supplies the dependencies of another object.
+
 What is static binding and dynamic binding?
-
-
-
-
-
-
-
-
-
+A. Static binding occurs when the type of object is determined at compiled time. And, Dynamic binding occurs when type of object is determined at run time.
