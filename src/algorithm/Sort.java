@@ -76,43 +76,43 @@ public class Sort {
     }
 
 
-//    public int[] mergeSort(int[] array,int[] leftArray, int[] rightArray, int[] sortedArray){
-//        final long startTime = System.currentTimeMillis();
-//        int[] list = array;
-//
-//        int leftArrayLength = leftArray.length;
-//        int rightArrayLength = rightArray.length;
-//        int i = 0;
-//        int j = 0;
-//        int k = 0;
-//        while(i < leftArrayLength && j < rightArrayLength) {
-//            if(leftArray[i] < rightArray[j]) {
-//                sortedArray[k] = leftArray[i];
-//                i++;
-//            } else {
-//                sortedArray[k] = rightArray[j];
-//                j++;
-//            }
-//            k++;
-//        }
-//        //copy the rest of the first half if there is anything left
-//        while(i < leftArrayLength) {
-//            sortedArray[k] = leftArray[i];
-//            i++;
-//            k++;
-//        }
-//        //copy the rest of the second half if there is anything left
-//        while(j < rightArrayLength) {
-//            sortedArray[k] = rightArray[j];
-//            j++;
-//            k++;
-//        }
-//        System.out.println(array);
-//        final long endTime = System.currentTimeMillis();
-//        final long executionTime = endTime - startTime;
-//        this.executionTime = executionTime;
-//        return list;
-//    }
+    public int[] mergeSort(int[] array,int[] leftArray, int[] rightArray, int[] sortedArray){
+        final long startTime = System.currentTimeMillis();
+        int[] list = array;
+
+        int leftArrayLength = leftArray.length;
+        int rightArrayLength = rightArray.length;
+        int i = 0;
+        int j = 0;
+        int k = 0;
+        while(i < leftArrayLength && j < rightArrayLength) {
+            if(leftArray[i] < rightArray[j]) {
+                sortedArray[k] = leftArray[i];
+                i++;
+            } else {
+                sortedArray[k] = rightArray[j];
+                j++;
+            }
+            k++;
+        }
+        //copy the rest of the first half if there is anything left
+        while(i < leftArrayLength) {
+            sortedArray[k] = leftArray[i];
+            i++;
+            k++;
+        }
+        //copy the rest of the second half if there is anything left
+        while(j < rightArrayLength) {
+            sortedArray[k] = rightArray[j];
+            j++;
+            k++;
+        }
+        System.out.println(array);
+        final long endTime = System.currentTimeMillis();
+        final long executionTime = endTime - startTime;
+        this.executionTime = executionTime;
+        return list;
+    }
 
 
 
