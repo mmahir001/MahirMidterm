@@ -222,12 +222,26 @@ public class Sort {
     }
 
 
-    public int [] bucketSort(int [] array){
+    public int [] bucketSort(int [] array, int n){
         final long startTime = System.currentTimeMillis();
         int [] list = array;
-        //implement here
+        int [] bucket=new int[n+1];
 
+        for (int i=0; i<bucket.length; i++) {
+            bucket[i]=0;
+        }
 
+        for (int i=0; i<array.length; i++) {
+            bucket[array[i]]++;
+        }
+
+        int outPos=0;
+        for (int i=0; i<bucket.length; i++) {
+            for (int j=0; j<bucket[i]; j++) {
+                array[outPos++]=i;
+
+            }
+        }
 
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
@@ -238,8 +252,19 @@ public class Sort {
     public int [] shellSort(int [] array){
         final long startTime = System.currentTimeMillis();
         int [] list = array;
-        //implement here
-
+        int n = array.length;
+        for (int x = n/2; x > 0; x /= 2)
+        {
+            for (int i = x; i < n; i += 1)
+            {
+                int temp = array[i];
+                int j;
+                for (j = i; j >= x && array[j - x] > temp; j -= x)
+                    array[j] = array[j - x];
+                array[j] = temp;
+            }
+//            System.out.println(array[n]);
+        }
 
 
         final long endTime = System.currentTimeMillis();

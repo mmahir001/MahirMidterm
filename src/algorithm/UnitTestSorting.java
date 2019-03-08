@@ -13,6 +13,7 @@ public class UnitTestSorting {
         //Create Sort object
         Sort sort = new Sort();
         //apply unsorted array to selectionSort.
+
         sort.selectionSort(unSortedArray);
         //verify if the unsorted array is sorted by the selection sort algorithm.
         try {
@@ -21,6 +22,8 @@ public class UnitTestSorting {
             ex.getMessage();
         }
         System.out.println("Select Sort passed");
+
+
 
         sort.insertionSort(unSortedArray);
         //verify if the unsorted array is sorted by the selection sort algorithm.
@@ -31,6 +34,8 @@ public class UnitTestSorting {
 
         }
         System.out.println("Insert Sort passed");
+
+
 
         sort.bubbleSort(unSortedArray);
         //verify if the unsorted array is sorted by the selection sort algorithm.
@@ -52,6 +57,7 @@ public class UnitTestSorting {
         System.out.println("Merge Sort passed");
 
 
+
         sort.quickSort(unSortedArray,0,unSortedArray.length-1);
         try {
             Assert.assertEquals(sortedArray, unSortedArray, "Array is not Sorted");
@@ -59,6 +65,8 @@ public class UnitTestSorting {
             ex.getMessage();
         }
         System.out.println("Quick Sort passed");
+
+
 
         sort.heapSort(unSortedArray);
         try {
@@ -70,13 +78,23 @@ public class UnitTestSorting {
 
 
 
+        sort.bucketSort(unSortedArray,10);
+        try {
+            Assert.assertEquals(sortedArray, unSortedArray, "Array is not Sorted");
+        }catch(Exception ex){
+            ex.getMessage();
+        }
+        System.out.println("Bucket Sort passed");
 
 
 
-        //Now implement Unit test for rest of the soring algorithm...................below
-
-
-
+        sort.shellSort(unSortedArray);
+        try {
+            Assert.assertEquals(sortedArray, unSortedArray, "Array is not Sorted");
+        }catch(Exception ex){
+            ex.getMessage();
+        }
+        System.out.println("Shell Sort passed");
 
 
     }
