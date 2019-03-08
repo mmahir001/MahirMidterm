@@ -20,13 +20,18 @@ public class UnitTestSorting {
         }catch(Exception ex){
             ex.getMessage();
         }
+        System.out.println("Select Sort passed");
+
         sort.insertionSort(unSortedArray);
         //verify if the unsorted array is sorted by the selection sort algorithm.
         try {
             Assert.assertEquals(sortedArray, unSortedArray, "Array is not Sorted");
         }catch(Exception ex){
             ex.getMessage();
+
         }
+        System.out.println("Insert Sort passed");
+
         sort.bubbleSort(unSortedArray);
         //verify if the unsorted array is sorted by the selection sort algorithm.
         try {
@@ -34,13 +39,17 @@ public class UnitTestSorting {
         }catch(Exception ex){
             ex.getMessage();
         }
-//        sort.mergeSort(unSortedArray);
-//        //verify if the unsorted array is sorted by the selection sort algorithm.
-//        try {
-//            Assert.assertEquals(sortedArray, unSortedArray, "Array is not Sorted");
-//        }catch(Exception ex){
-//            ex.getMessage();
-//        }
+        System.out.println("Bubble Sort passed");
+
+
+
+        sort.mergeSort(unSortedArray,0,unSortedArray.length-1);
+        try {
+            Assert.assertEquals(sortedArray, unSortedArray, "Array is not Sorted");
+        }catch(Exception ex){
+            ex.getMessage();
+        }
+        System.out.println("Merge Sort passed");
 
 
 

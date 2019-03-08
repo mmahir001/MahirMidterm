@@ -76,47 +76,68 @@ public class Sort {
     }
 
 
-    public int[] mergeSort(int[] array,int[] leftArray, int[] rightArray, int[] sortedArray){
-        final long startTime = System.currentTimeMillis();
-        int[] list = array;
 
-        int leftArrayLength = leftArray.length;
-        int rightArrayLength = rightArray.length;
-        int i = 0;
-        int j = 0;
-        int k = 0;
-        while(i < leftArrayLength && j < rightArrayLength) {
-            if(leftArray[i] < rightArray[j]) {
-                sortedArray[k] = leftArray[i];
+    void merge(int array[], int left, int middle, int right)
+    {
+        int val1 = middle - left + 1;
+        int val2 = right - middle;
+
+        int x[] = new int [val1];
+        int y[] = new int [val2];
+
+
+        for (int i=0; i < val1; ++i)
+            x[i] = array[left + i];
+        for (int j=0; j < val2; ++j)
+            y[j] = array[middle + 1+ j];
+
+        int i = 0, j = 0;
+
+        int k = left;
+        while (i < val1 && j < val2)
+        {
+            if (x[i] <= y[j])
+            {
+                array[k] = x[i];
                 i++;
-            } else {
-                sortedArray[k] = rightArray[j];
+            }
+            else
+            {
+                array[k] = y[j];
                 j++;
             }
             k++;
         }
-        //copy the rest of the first half if there is anything left
-        while(i < leftArrayLength) {
-            sortedArray[k] = leftArray[i];
+        while (i < val1)
+        {
+            array[k] = x[i];
             i++;
             k++;
         }
-        //copy the rest of the second half if there is anything left
-        while(j < rightArrayLength) {
-            sortedArray[k] = rightArray[j];
+        while (j < val2)
+        {
+            array[k] = y[j];
             j++;
             k++;
         }
-        System.out.println(array);
+    }
+
+    public int[] mergeSort(int[] array, int left, int right){
+        final long startTime = System.currentTimeMillis();
+        int [] list = array;
+        if (left < right)
+        {
+            int val = (left + right)/2;
+            mergeSort(array, left, val);
+            mergeSort(array ,val+1, right);
+            merge(array, left, val, right);
+        }
+
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
         this.executionTime = executionTime;
         return list;
     }
-
-
-
-
 
     public int [] quickSort(int [] array){
         int [] list = array;

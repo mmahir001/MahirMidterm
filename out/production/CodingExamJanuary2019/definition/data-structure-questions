@@ -1,34 +1,90 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
-A.
-
+A. Because, it is used to organize and store data into a machine, and it helps us access that data efficiently.
 
 What are the various operations that can be performed on different Data Structures?
+A. Insertion, delete, modification, search, and sort.
+
 List out the areas in which data structures are applied extensively?
+A. Operating system, database management system, compiler design, graphics, Artificial intelligence, numerical analysis, simulation, and statical analysis package.
+
 what is an Array?
+A. Is an object that acts as a container to hold same typed of data, like numbers.
+
 what is the difference between the Array and ArrayList?
+A. Array is used to hold multiple values of same type. Whereas, arraylist is part of a collection framework in java.util package, and can only store objects.
+
 what is LinkedList?
+A. It uses a a doubly linked list to store elements, which inherits the  AbstractList class and implements List and Deque interfaces. It's linked by using pointers and addresses.
+
 How is an Array different from Linked List?
+A. In an array, the element is independent and is accessed by using it's index value. But, in a linked list, each element points to the next, previous, or both nodes.
+
 what is queue?
+A. Is a collection of ordered elements, it lets use insert, and remove operations, in different ways.
+
 what is stack?
+A. Is a class that helps model stack data structure, like a stack of disks.
+
 what is FIFO and LIFO?
+A. First In First Out (FIFO), and Last In First Out (LIFO).  is an approach used in queuing.
+
 what is the order of complexity?
+A. It is a mathematical expression of the size of the input, and the algorithm finishes between two factors of it. To find the size of N, we can use O(N), O(N^2), O(N^3), O(N*log(N)) etc.
+   It's designed to seek the most efficient algorithm to reduce the order of complexity.
+
 what is the best case to search an element from an array?
+A. The two best case would be to use Binary search, and sorting search.
+
 what is the worst case to search an element from an array?
+A. The worst case would be to having to searchthrough every single element, which is the linear search.
+
 what is tree in data structure?
+A. Is a non-linear data structure, that stores data by hierarchically. Just like a family tree traits are passed down.
+
 what is graph in data structure?
+A. Is a collection of nodes that contains atan and are connected to other nodes.
+
 what is the difference between the HashTable and HashMap?
+A. HashTable: allows duplicate keys, does not allow null for both key and value. It will throw NullPointerException, and Hashtable does not maintain insertion order. The order is defined by the Hash function.
+   HashMap: allows duplicate keys, HashMap does not maintain insertion order. The order is defined by the Hash function, and It allows null for both key and value.
+
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+A. RDBMS are used for arrays, Network data model are used for Graphs, and Hierarchical data model are used for tree searches.
+
 How HashMap works in java?
+A. It works bases of the key of the values, and the elements in HashMaps contains key nad value, which is stored against a key.
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+A. It's an exception , that in the API. It occurs when an array is accessed with an illegal index.
+
 What are the different ways of copying an array into another array?
+A. 1. We can copy manually, where elements are coped one by one.
+   2. Arrays.copyOf() - directly copy one array to another
+   3. System.arraycopy() - directly copies one array to another
+   4. Object.clone() - make a copy/clone of an array.
+
 What is difference between an array and a linked list?
+A. Array list used a dynamic array to store elements, and Linked list used doubly linked list.
+   Linked list contains a order of the elements where each element is linked to its next element.
+   Array list is better for storing and accessing data, and linked list is better for manipulating data.
+
 What is DFS and BFS?
+A. Depth first search (DFS), and Breadth first search (BFS). Two algorithms used to search for nodes in a graph.
+
 What is Recursion?
+A. Is a process where method calls it self inside the method.
+
 What are linear and non linear data Structures?
+A. Linear data structures roams the data elements sequentially, where only one data element can directly be reached. (Arrays & Linked Lists)
+   Non linear data Structures is here data item is connected to several other data items, which is specific for reflecting relationships. (Trees & graphs)
+
 What is Big-(O)-notation?
+A. Is a method used to find the complexity of an algorithm. It classifies algorithms according to how their running time or space requirements grow as the input size grows.
+
 Outlined different kind of sorting algorithm with time complexity?
+A. Bubble sort, Selection sort, Insertion sort, Merge sort, Quick sort, Heap sort, bucket sort, radix sort.
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
