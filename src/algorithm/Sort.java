@@ -180,11 +180,40 @@ public class Sort {
     }
 
 
+    void heap(int array[], int n, int i)
+    {
+        int val = i;
+        int left = 2*i + 1;
+        int right = 2*i + 2;
+
+        if (left < n && array[left] > array[val])
+            val = left;
+
+        if (right < n && array[right] > array[val])
+            val = right;
+
+        if (val != i)
+        {
+            int trade = array[i];
+            array[i] = array[val];
+            array[val] = trade;
+            heap(array, n, val);
+        }
+    }
+
     public int [] heapSort(int [] array){
         final long startTime = System.currentTimeMillis();
         int [] list = array;
-
-
+        int n = array.length;
+        for (int i = n / 2 - 1; i >= 0; i--)
+            heap(array, n, i);
+        for (int i=n-1; i>=0; i--)
+        {
+            int val = array[0];
+            array[0] = array[i];
+            array[i] = val;
+            heap(array, i, 0);
+        }
 
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;

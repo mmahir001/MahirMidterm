@@ -60,6 +60,13 @@ public class UnitTestSorting {
         }
         System.out.println("Quick Sort passed");
 
+        sort.heapSort(unSortedArray);
+        try {
+            Assert.assertEquals(sortedArray, unSortedArray, "Array is not Sorted");
+        }catch(Exception ex){
+            ex.getMessage();
+        }
+        System.out.println("Heap Sort passed");
 
 
 
