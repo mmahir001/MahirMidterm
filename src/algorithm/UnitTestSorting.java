@@ -52,6 +52,15 @@ public class UnitTestSorting {
         System.out.println("Merge Sort passed");
 
 
+        sort.quickSort(unSortedArray,0,unSortedArray.length-1);
+        try {
+            Assert.assertEquals(sortedArray, unSortedArray, "Array is not Sorted");
+        }catch(Exception ex){
+            ex.getMessage();
+        }
+        System.out.println("Quick Sort passed");
+
+
 
 
 
