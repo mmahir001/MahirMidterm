@@ -8,7 +8,7 @@ public class Factorial {
         System.out.println("Recursion: Factorial of 5 is: " + fact1);
 
         int fact2 = iteration (5);
-        System.out.println("Iteration: Factorial of 5 is : "+ iteration(5));
+        System.out.println("Iteration: Factorial of 5 is : "+ fact2);
     }
 
 
