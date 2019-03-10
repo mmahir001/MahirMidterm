@@ -84,7 +84,7 @@ What is Big-(O)-notation?
 A. Is a method used to find the complexity of an algorithm. It classifies algorithms according to how their running time or space requirements grow as the input size grows.
 
 Outlined different kind of sorting algorithm with time complexity?
-A. Bubble sort, Selection sort, Insertion sort, Merge sort, Quick sort, Heap sort, bucket sort, radix sort.
+A. Bubble sort O(n^2), Selection sort O(n^2), Insertion sort O(n^2), Merge sort O(nlogn), Quick sort O(n^2), Heap sort O(nlogn), bucket sort O(n^2).
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.

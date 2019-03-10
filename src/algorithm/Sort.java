@@ -263,9 +263,8 @@ public class Sort {
                     array[j] = array[j - x];
                 array[j] = temp;
             }
-//            System.out.println(array[n]);
-        }
 
+        }
 
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
