@@ -1,34 +1,31 @@
 package math.problems;
 
+/**
+ * Created by mrahman on 04/02/18.
+ */
 public class Factorial {
-
     public static void main(String[] args) {
 
-        int fact1 = recursion(5);
-        System.out.println("Recursion: Factorial of 5 is: " + fact1);
+        System.out.println(recursion(5));
+        System.out.println(iteration(5));
 
-        int fact2 = iteration (5);
-        System.out.println("Iteration: Factorial of 5 is : "+ fact2);
     }
-
-
-    public static int recursion(int n) {
-        int val;
-        if (n == 1) {
+    //recursion
+    public static int recursion(int n){
+        if(n==0){
             return 1;
         }
-        val = recursion(n - 1) * n;
-        return val;
+        return n * recursion(n-1);
     }
-
-
+    //Iteration
     public static int iteration(int n){
-        int val=1;
-        for(int i=1; i<=n;i++){
-            val=val*i;
-        }
-        return val;
+        int x = 1;
+
+        for (int i=1; i <= n; i++)
+            x *= i;
+
+        return x;
+
+
     }
-
-
 }
