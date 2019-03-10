@@ -1,11 +1,7 @@
 package json.parser;
 
 public class Cnn {
-
-    private String artical;
     private String source;
-    private String id;
-    private String name;
     private String author;
     private String title;
     private String description;
@@ -14,13 +10,9 @@ public class Cnn {
     private String publishedAt;
     private String content;
 
-
     public Cnn(){}
-    public Cnn(String artical, String source,String id,String name,String author,String title,String description,String url,String urlToImage,String publishedAt,String content){
-        this.artical = artical;
-        this.source = source;
-        this.id = id;
-        this.name = name;
+
+    public Cnn(String source,String author, String title, String description, String url, String urlToImage, String publishedAt, String content) {
         this.author = author;
         this.title = title;
         this.description = description;
@@ -28,40 +20,13 @@ public class Cnn {
         this.urlToImage = urlToImage;
         this.publishedAt = publishedAt;
         this.content = content;
-
     }
-
-
-    public String getArtical() {
-        return artical;
-    }
-
-    public void setArtical(String artical) {
-        this.artical = artical;
-    }
-
     public String getSource() {
         return source;
     }
 
-    public void setSource(String source) {
+    public void setSource(String author) {
         this.source = source;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getAuthor() {
@@ -119,5 +84,4 @@ public class Cnn {
     public void setContent(String content) {
         this.content = content;
     }
-
 }
