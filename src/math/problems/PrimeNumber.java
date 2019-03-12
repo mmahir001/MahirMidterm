@@ -39,15 +39,11 @@ public class PrimeNumber {
 
 		}
 
-
-
-
-
 //
 //		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
 //		List<String> lowestValue = new ArrayList<String>();
 //		try {
-//			connectToSqlDB.insertDataFromArrayToSqlTable(array, "tbl_primeNumber", "column_primeNumber");
+//			connectToSqlDB.insertDataFromArrayToSqlTable(primes, "tbl_primeNumber", "column_primeNumber");
 //			lowestValue = connectToSqlDB.readDataBase("tbl_primenumber", "column_primeNumber");
 //
 //		} catch (Exception e) {

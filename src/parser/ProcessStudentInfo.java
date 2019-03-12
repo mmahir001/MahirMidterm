@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-
+import java.util.*;
 public class ProcessStudentInfo {
 
 		/*
@@ -50,30 +50,36 @@ public class ProcessStudentInfo {
 				
 				List<Student> seleniumStudents = new ArrayList<Student>();
 				List<Student> qtpStudents = new ArrayList<Student>();
-				
+
 				//Create XMLReader object.
 				XmlReader xmlReader = new XmlReader();
-				
-				
+
+
 				//Parse Data using parseData method and then store data into Selenium ArrayList.
 				seleniumStudents = xmlReader.parseData(tag, pathSelenium);
 
 				//Parse Data using parseData method and then store data into Qtp ArrayList.
-				
+				qtpStudents = xmlReader.parseData(tag, pathQtp);
+
 				//add Selenium ArrayList data into map.
+				list.put("Selenium", seleniumStudents);
 
 				//add Qtp ArrayList data into map.
-		
-		      	
+				list.put("Qtp", qtpStudents);
+
 				//Retrieve map data and display output.
-
-
+				Iterator it = list.entrySet().iterator();
+				while (it.hasNext()) {
+					Map.Entry x = (Map.Entry) it.next();
+					System.out.println(x.getKey() + " | " + x.getValue());
+				}
 
 				//Store Qtp data into Qtp table in Database
 				connectToMongoDB.insertIntoMongoDB(seleniumStudents,"qtp");
 				//connectToSqlDB.insertDataFromArrayListToMySql(seleniumStudents, "qtp","studentList");
 
 				//Store Selenium data into Selenium table in Database
+				System.out.println(connectToMongoDB.insertIntoMongoDB(seleniumStudents, "selenium"));
 
 				//Retrieve Qtp students from Database
                List<Student> stList = connectToMongoDB.readStudentListFromMongoDB("qtp");
@@ -82,7 +88,10 @@ public class ProcessStudentInfo {
 			   }
 
 			   //Retrieve Selenium students from Database
-
+				List<Student> studentList = connectToMongoDB.readStudentListFromMongoDB("selenium");
+				for (Student st : studentList) {
+					System.out.println(st.getFirstName() + " | " + st.getLastName() + " | " + st.getScore() + " | " + st.getId());
+				}
 
 			}
 
