@@ -8,10 +8,9 @@ public class UnitTestingMath {
             Assert.assertEquals(Factorial.recursion(5), 120, "It Works ");
             Assert.assertEquals(Factorial.iteration(5), 120, "It Works ");
             System.out.println("Unit testing passed");
-        }catch(Exception ex){
+        } catch (Exception ex) {
             ex.getMessage();
         }
-
 
     }
 }

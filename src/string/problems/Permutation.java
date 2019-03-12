@@ -12,5 +12,17 @@ public class Permutation {
          * Write Java program to compute all Permutation of a String
          *
          */
+        permMethod("","ABC");
+    }
+
+    public static void permMethod (String x, String y) {
+        int val = y.length();
+        if (val == 0) {
+            System.out.println(x);
+        } else {
+            for (int i = 0; i < val; i++) {
+                permMethod(x + y.charAt(i), y.substring(0, i) + y.substring(i + 1, val));
+            }
+        }
     }
 }
