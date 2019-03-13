@@ -14,8 +14,17 @@ public class FortuneEmployee {
 	 *
 	 **/
 	public static void main(String[] args) {
+		EmployeeInfo.setCompanyName("Amazon");
+		System.out.println(EmployeeInfo.getCompanyName());
+		EmployeeInfo emp = new EmployeeInfo(1000);
+		emp.departments();
+		emp.assignDepartment();
+		emp.calculateSalary();
+		emp.yearsWithCompany();
+		emp.calculateEmployeeBonus();
+		emp.calculateEmployeePension();
 
-
+		EmployeeInfo empName = new EmployeeInfo("John Doe",3456);
 
 	}
 

@@ -10,16 +10,16 @@ public interface Employee {
 	
 	//employeeId() will return employee id.
 	public int employeeId();
-	
+
 	//employeeName() will return employee name
 	public String employeeName();
-	
+
 	//assignDepartment() will assign employee to departments
-    public void assignDepartment();
-	
+	public void assignDepartment();
+
 	//calculate employee salary
-	public int calculateSalary();
-	
+	public double calculateSalary();
+
 	//employee benefit
 	public void benefitLayout();
 
